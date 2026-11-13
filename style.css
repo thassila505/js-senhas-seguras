@@ -1,6 +1,32 @@
-.parametro-senhas_botao{
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
+:root{
+    --branco: white;
+    --cor-de-fundo:#00162E;
+    --fundo-senha: #00244D;
+    --fundo-texto: #001E40;
+    --borda: #0075FF;
+    --roboto: 'Roboto', sans-serif;
+    --roboto-mono: 'Roboto mono', monospace;
 }
+
+.parametro-senha__botao{
+    background-color: var(--fundo-texto);
+    color: var(--branco);
+    border: 2px solid var(--borda);
+    padding: 24px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.parametro-senha__texto{
+    padding: 24px;
+    border-top: 2px solid var(--borda);
+    border-bottom: 2px solid var(--borda);
+    margin: 0;
+    font-size: 24px;
+}
+
 
 label{
     font-size: 20px;
@@ -11,19 +37,78 @@ label{
     height: 20px;
     cursor: painter;
 }
-.parametro-senha_botao{
-    background-color: var(--fundo-texto);
-    color: var(--branco);
-    border: 2px solid var(--borda);
+.conteudo-senha{
+    margin-top: 80px;
+    background: var(--fundo-senha);
     padding: 24px;
-    cursor:peinter;
+    border-bottom: 6px solid var(--borda);
 }
 
-.parametro-senha__texto{
-    padding:24px;
-    border-top; 2px solid var(--borda);
-    border-botton: 2px solid var(--borda);
-    margin: 0;
-    font-size; 24px;
+#campo-senha{
+    background-color: var(--fundo-senha);
+    border: none;
+    color: var(--branco);
+    font-family: var(--roboto-mono);
+    font-size: 40px;
+}
+*{
+    font-weight: 400;
 }
 
+body{
+    color: var(--branco);
+    background-color: var(--cor-de-fundo);
+    font-family: var(--roboto);
+}
+
+.titulo-principal{
+    font-family; var(--roboto-mono);
+    font-size:32px;
+}
+
+.titulo-secundario{
+    font-size:24px;
+}
+
+.contexto-titulo{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.barra{
+    background-color: var(--fundo-senha);
+    height: 30px;
+    widht: 100%;
+}
+
+.forca{
+    height: 30px;
+    position: relative;
+    botton: 30px;
+}
+
+.fraca{
+    widht: 25%;
+    background-color: #e71b32;
+}
+
+.media{
+    widht:50%;
+    background-color: #FAF408;
+}
+
+.forte{
+    background-color: #00ff85;
+    widht:100%;
+}
+
+.parametro-senha-textos{
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 768px){
+    .parametro-coluna_senha{
+        flex-direction:row;
+    }
+}
