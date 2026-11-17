@@ -33,3 +33,20 @@ function aumentaTamanho(){
   }
   numeroSenha.textContent = tamanhoSenha;
 }
+const campoSenha = document.querySelector('#camp.senha');
+const checbox = document.querySelectAll('.checkbox');
+
+for(i=0 ; i< checkbox.length; i++){
+  checkbox[1].onclick = geraSenha;
+}
+
+const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
+const numeros = '0123456789';
+const simbolos = '!@*?';
+geraSenha(){
+  let alfabeto = '';
+  if (checkbox[0].checked){
+    alfabeto = alfabeto + letrasMaiusculas;  
+  }
+}
